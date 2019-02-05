@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/Student/Documents/Mo_MP3/MP3_board_first/mp3.brd
+Job           : C:/Users/Student/Documents/PROJECTS/mo_mp3/MP3_board_first/mp3.brd
 
-Start at      : 14:29:32 (1/25/2019)
-End at        : 14:30:30 (1/25/2019)
-Elapsed time  : 00:00:34
+Start at      : 13:58:05 (2/5/2019)
+End at        : 13:58:11 (2/5/2019)
+Elapsed time  : 00:00:05
 
-Signals       :    16   RoutingGrid: 6.25 mil  Layers: 1
-Connections   :    29   predefined:  0 ( 0 Vias )
+Signals       :    19   RoutingGrid: 24.6299 mil  Layers: 1
+Connections   :    33   predefined:  12 ( 0 Vias )
 
-Router memory :   381480
+Router memory :   28600
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
 
-Time per pass     :  00:00:34  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :       609         0         0         0         0
-max. Level        :         4         0         0         0         0
-max. Total        :        17         0         0         0         0
+Time per pass     :  00:00:02  00:00:03  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0       102         0         0         0         0         0         0         0         0
+max. Level        :         0         7         0         0         0         0         0         0         0         0
+max. Total        :         0        16         0         0         0         0         0         0         0         0
 
-Routed            :        23        23        23        23        23
-Vias              :         0         0         0         0         0
-Resolution        :    79.3 %    79.3 %    79.3 %    79.3 %    79.3 %
+Routed            :        14        20        20        20        20        20        20        20        20        20
+Vias              :         0         0         0         0         0         0         0         0         0         0
+Resolution        :    78.8 %    97.0 %    97.0 %    97.0 %    97.0 %    97.0 %    97.0 %    97.0 %    97.0 %    97.0 %
 
-Final             : 79.3% finished
+Final             : 93.9% finished. Polygons may have fallen apart.

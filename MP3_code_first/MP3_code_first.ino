@@ -2,8 +2,8 @@
 #include "SoftwareSerial.h"
 #include "DFRobotDFPlayerMini.h"
 
-#define NEXT_FOLDER  2
-#define PREV_FOLDER  3
+#define NEXT_FOLDER  4
+#define PREV_FOLDER  8
 
 #define PRESSED LOW
 
@@ -18,6 +18,9 @@ void setup()
 {
   mySoftwareSerial.begin(9600);
   Serial.begin(115200);
+
+  // disable ADC
+  ADCSRA = 0;
 
   pinMode(NEXT_FOLDER, INPUT_PULLUP);
   pinMode(PREV_FOLDER, INPUT_PULLUP);
