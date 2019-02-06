@@ -9,6 +9,20 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -153,9 +167,6 @@
 <wire x1="41.91" y1="62.23" x2="44.45" y2="64.77" width="0.1524" layer="20" curve="-90"/>
 <wire x1="104.14" y1="62.23" x2="101.6" y2="64.77" width="0.1524" layer="20" curve="90"/>
 <wire x1="101.6" y1="64.77" x2="44.45" y2="64.77" width="0.1524" layer="20"/>
-<hole x="45.72" y="62.23" drill="3.048"/>
-<hole x="63.5" y="27.94" drill="3.048"/>
-<hole x="101.6" y="48.26" drill="3.048"/>
 </plain>
 <libraries>
 <library name="christy">
@@ -393,6 +404,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X01NS_KIT">
+<description>&lt;h3&gt;Plated Through Hole - No Silk Outline Kit Version&lt;/h3&gt;
+&lt;p&gt; Mask on only one side to make soldering in kits easier.
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.9398" width="0" layer="30"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -600,11 +644,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="SF_SKU" value="COM-10791" x="101.6" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="103.886" y="36.83" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="25.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="99.314" y="25.4" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="CONN-10672" x="101.6" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SF_SKU" value="COM-10791" x="101.6" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="103.886" y="25.4" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="25.4" smashed="yes" rot="MR270">
+<attribute name="NAME" x="99.314" y="25.4" size="0.6096" layer="26" font="vector" ratio="20" rot="MR270" align="bottom-center"/>
+<attribute name="PROD_ID" value="CONN-10672" x="101.6" y="25.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SF_SKU" value="COM-10791" x="101.6" y="25.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="103.886" y="25.4" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
 </element>
 <element name="S3" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="92.71" y="62.23" smashed="yes" rot="R180">
 <attribute name="NAME" x="92.71" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -618,11 +662,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="SF_SKU" value="COM-10791" x="68.58" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="68.58" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="S5" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="81.28" y="62.23" smashed="yes" rot="R180">
-<attribute name="NAME" x="81.28" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="CONN-10672" x="81.28" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SF_SKU" value="COM-10791" x="81.28" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="81.28" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+<element name="S5" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="81.28" y="62.23" smashed="yes" rot="MR180">
+<attribute name="NAME" x="81.28" y="59.944" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
+<attribute name="PROD_ID" value="CONN-10672" x="81.28" y="62.23" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="SF_SKU" value="COM-10791" x="81.28" y="62.23" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="81.28" y="64.516" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
 <element name="U$2" library="christy" package="ADAFRUIT_SOFTPOWER" value="ADAFRUIT_SOFTPOWER" x="52.07" y="33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.69" y="21.59" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -640,6 +684,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$1" library="christy" package="DFPLAYER" value="DFPLAYER" x="83.82" y="30.48" smashed="yes"/>
 <element name="C1" library="christy" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="80.01" y="38.1" smashed="yes">
 <attribute name="PROD_ID" value="CAP-08370" x="80.01" y="38.1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J1" library="SparkFun-Connectors" package="1X01NS_KIT" value="" x="67.31" y="27.94" smashed="yes">
+<attribute name="NAME" x="66.04" y="29.083" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="66.04" y="26.924" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
+</element>
+<element name="J2" library="SparkFun-Connectors" package="1X01NS_KIT" value="" x="69.85" y="25.4" smashed="yes">
+<attribute name="NAME" x="68.58" y="26.543" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="68.58" y="24.384" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
+</element>
+<element name="J3" library="SparkFun-Connectors" package="1X01NS_KIT" value="" x="62.23" y="24.13" smashed="yes">
+<attribute name="NAME" x="60.96" y="25.273" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="60.96" y="23.114" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
 </elements>
 <signals>
@@ -665,19 +721,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="U$3" pad="P$3"/>
 <contactref element="U$3" pad="P$2"/>
 <contactref element="U$2" pad="P$2"/>
-<contactref element="U$1" pad="GND_1"/>
 <contactref element="U$1" pad="GND_2"/>
 <contactref element="C1" pad="2"/>
-<polygon width="0.4572" layer="16">
-<vertex x="41.91" y="21.59"/>
-<vertex x="41.91" y="62.23" curve="-90"/>
-<vertex x="44.45" y="64.77"/>
-<vertex x="101.6" y="64.77" curve="-90"/>
-<vertex x="104.14" y="62.23"/>
-<vertex x="104.14" y="21.59" curve="-90"/>
-<vertex x="101.6" y="19.05"/>
-<vertex x="44.45" y="19.05" curve="-90"/>
-</polygon>
+<wire x1="78.78" y1="62.23" x2="95.21" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="80.01" y1="52.07" x2="78.78" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="55.88" x2="80.01" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="71.08" y1="62.23" x2="74.93" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="44.45" x2="80.01" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="81.28" y1="38.227" x2="82.55" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="24.13" x2="81.28" y2="38.227" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="27.9" x2="92.71" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="34.33" x2="101.6" y2="27.9" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="45.72" x2="74.93" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="45.72" x2="53.34" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="36.83" x2="53.34" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_BATT">
 <contactref element="R1" pad="P$1"/>
@@ -713,7 +770,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="NXT">
 <contactref element="S2" pad="2"/>
 <contactref element="U$1" pad="IO1"/>
-<wire x1="92.71" y1="21.59" x2="101.6" y2="27.9" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="21.59" x2="101.6" y2="22.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PSE">
 <contactref element="R2" pad="P$1"/>
@@ -722,13 +779,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="NXF">
 <contactref element="S4" pad="2"/>
-<contactref element="U1" pad="25"/>
-<wire x1="66.08" y1="62.23" x2="90.17" y2="44.45" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="14"/>
+<wire x1="64.77" y1="52.07" x2="66.08" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PXF">
 <contactref element="S5" pad="2"/>
-<contactref element="U1" pad="26"/>
-<wire x1="92.71" y1="44.45" x2="78.78" y2="62.23" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="6"/>
+<wire x1="85.09" y1="52.07" x2="83.78" y2="62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="S3" pad="2"/>
@@ -749,6 +806,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="U1" pad="16"/>
 <contactref element="R4" pad="P$1"/>
 <wire x1="64.77" y1="39.37" x2="67.31" y2="44.45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8">
+<contactref element="J1" pad="1"/>
+<contactref element="U$1" pad="DAC_R"/>
+<wire x1="67.31" y1="27.94" x2="74.93" y2="31.75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="J2" pad="1"/>
+<contactref element="U$1" pad="DAC_L"/>
+<wire x1="69.85" y1="25.4" x2="74.93" y2="29.21" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="3.3V">
+<contactref element="U$1" pad="GND_1"/>
+<contactref element="J3" pad="1"/>
+<wire x1="62.23" y1="24.13" x2="74.93" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
