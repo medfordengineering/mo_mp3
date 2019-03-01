@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -143,6 +143,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTExOTgy" projecturn="a.cGVyc29uYWw6dWUyOTExOTgyIzIwMTYwMzMxMjgyNzUyMDY" f3durn="urn:adsk.wipprod:dm.lineage:Htr5RlsbReCfPXNVY2Vkdg" pcbguid="e305ef3e-dffe-4e6d-9596-af037f15f207" lastpulledtime="" lastsyncedchangeguid="925c1495-fd3d-f05f-ba47-128c49b6e345"/>
 <plain>
 <wire x1="41.91" y1="19.05" x2="41.91" y2="64.77" width="0.1524" layer="20"/>
 <wire x1="104.14" y1="19.05" x2="41.91" y2="19.05" width="0.1524" layer="20"/>
@@ -566,44 +567,71 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="christy" package="AXIAL-0.3" value="100k" x="100.33" y="58.42" rot="R270">
+<element name="R1" library="christy" package="AXIAL-0.3" value="100k" x="100.33" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="101.346" y="58.42" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-12184" x="100.33" y="58.42" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="99.314" y="58.42" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R2" library="christy" package="AXIAL-0.3" value="100k" x="87.63" y="34.29" rot="R90">
+<element name="R2" library="christy" package="AXIAL-0.3" value="100k" x="87.63" y="34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="86.614" y="34.29" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-12184" x="87.63" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="88.646" y="34.29" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R4" library="christy" package="AXIAL-0.3" value="10K" x="64.77" y="35.56" rot="R270">
+<element name="R4" library="christy" package="AXIAL-0.3" value="10K" x="64.77" y="35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="65.786" y="35.56" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-12184" x="64.77" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="63.754" y="35.56" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R5" library="christy" package="AXIAL-0.3" value="10K" x="69.85" y="35.56" rot="R270">
+<element name="R5" library="christy" package="AXIAL-0.3" value="10K" x="69.85" y="35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.866" y="35.56" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-12184" x="69.85" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="68.834" y="35.56" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="36.83" rot="R90">
+<element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.314" y="36.83" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CONN-10672" x="101.6" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_SKU" value="COM-10791" x="101.6" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="103.886" y="36.83" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="25.4" rot="R90">
+<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="101.6" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="99.314" y="25.4" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CONN-10672" x="101.6" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_SKU" value="COM-10791" x="101.6" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="103.886" y="25.4" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="S3" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="92.71" y="62.23" rot="R180">
+<element name="S3" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="92.71" y="62.23" smashed="yes" rot="R180">
+<attribute name="NAME" x="92.71" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CONN-10672" x="92.71" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-10791" x="92.71" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="92.71" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="S4" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="68.58" y="62.23" rot="R180">
+<element name="S4" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="68.58" y="62.23" smashed="yes" rot="R180">
+<attribute name="NAME" x="68.58" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CONN-10672" x="68.58" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-10791" x="68.58" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="68.58" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="S5" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="81.28" y="62.23" rot="R180">
+<element name="S5" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_RIGHT_ANGLE" value="MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE" x="81.28" y="62.23" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.28" y="59.944" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CONN-10672" x="81.28" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-10791" x="81.28" y="62.23" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="81.28" y="64.516" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="U$2" library="christy" package="ADAFRUIT_SOFTPOWER" value="ADAFRUIT_SOFTPOWER" x="52.07" y="33.02" rot="R180"/>
-<element name="U$3" library="christy" package="ADAFRUIT_CHARGER" value="ADAFRUIT_CHARGER" x="52.07" y="45.72"/>
-<element name="U1" library="christy" package="DIP28_OMILL" value="ATMEGA328P_PDIP_OM" x="81.28" y="48.26" rot="R180"/>
-<element name="Y1" library="christy" package="RESONATOR-PTH-7.6X3.3-OM" value="" x="74.93" y="55.88" rot="R180"/>
-<element name="U$1" library="christy" package="DFPLAYER" value="DFPLAYER" x="83.82" y="30.48"/>
-<element name="C1" library="christy" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="80.01" y="38.1">
+<element name="U$2" library="christy" package="ADAFRUIT_SOFTPOWER" value="ADAFRUIT_SOFTPOWER" x="52.07" y="33.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.69" y="21.59" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="49.53" y="21.59" size="1.27" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="U$3" library="christy" package="ADAFRUIT_CHARGER" value="ADAFRUIT_CHARGER" x="52.07" y="45.72" smashed="yes"/>
+<element name="U1" library="christy" package="DIP28_OMILL" value="ATMEGA328P_PDIP_OM" x="81.28" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="99.695" y="48.26" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="62.23" y="48.26" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+</element>
+<element name="Y1" library="christy" package="RESONATOR-PTH-7.6X3.3-OM" value="" x="74.93" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="74.93" y="53.721" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="74.93" y="58.039" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+</element>
+<element name="U$1" library="christy" package="DFPLAYER" value="DFPLAYER" x="83.82" y="30.48" smashed="yes"/>
+<element name="C1" library="christy" package="CAP-PTH-SMALL-KIT" value="0.1uF" x="80.01" y="38.1" smashed="yes">
 <attribute name="PROD_ID" value="CAP-08370" x="80.01" y="38.1" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
@@ -819,4 +847,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+</compatibility>
 </eagle>
